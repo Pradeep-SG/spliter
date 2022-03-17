@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/spliter/static/css/main.af6795fc.css",
+    "main.js": "/spliter/static/js/main.cf2c99f5.js",
+    "static/media/icon-dollar.svg": "/spliter/static/media/icon-dollar.9f9be3534a9295a6595764d63a7bf3a3.svg",
+    "static/media/icon-person.svg": "/spliter/static/media/icon-person.65bfd20465dd1d2cb58c0b53e1160442.svg",
+    "index.html": "/spliter/index.html",
+    "main.af6795fc.css.map": "/spliter/static/css/main.af6795fc.css.map",
+    "main.cf2c99f5.js.map": "/spliter/static/js/main.cf2c99f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af6795fc.css",
+    "static/js/main.cf2c99f5.js"
+  ]
+}
