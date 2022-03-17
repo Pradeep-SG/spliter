@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import InputDiv from "./components/InputDiv";
+import OutputDiv from "./components/OutputDiv"
 
 function App() {
+
+  const [bill, setBill] = useState("142.55");
+  const [percent, setPercent] = useState("15");
+  const [person, setPerson] = useState("5");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div>
+        <InputDiv 
+          bill={bill}
+          setBill={(value) => setBill(value)}
+          setPercent={(value) => setPercent(value)}
+          person={person}
+          setPerson={(value) => setPerson(value)}
+        />
+      </div>
+      <div>
+        <OutputDiv
+          tip={(parseFloat(bill.trim())*(parseFloat(percent.trim())/100)/parseFloat(person.trim())).toFixed(2)}
+          total={(parseFloat(bill.trim())*(1 + parseFloat(percent.trim())/100)/parseFloat(person.trim())).toFixed(2)}
+          handleReset={() => {
+            setBill("100");
+            setPercent("5");
+            setPerson("5");
+          }}
+        />
+      </div>
     </div>
   );
 }
