@@ -135,6 +135,9 @@ body {
 }
 
 .output-div button {
+  position: relative;
+  top: 40px;
+  cursor: pointer;
   min-width: 100%;
   background-color: hsl(186, 14%, 43%);
   border: none;
@@ -142,9 +145,6 @@ body {
   border-radius: 5px;
   font-size: 16px;
   color: hsl(183, 100%, 15%);
-  position: relative;
-  top: 40px;
-  cursor: pointer;
 }
 
 .output-div button:hover {
